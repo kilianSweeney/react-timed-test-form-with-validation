@@ -104,8 +104,15 @@ class ProjectForm extends React.Component {
 
     updateList = (newProject) => {
       let newList = this.state.projectList;
-      newList.push(newProject);
-      this.setState({projectList:newList});
+      let idExists = false;
+      newList.map((item) => {
+        if(item.id === newProject.id)idExists = true;
+        return null;
+      });
+      if(!idExists){
+        newList.push(newProject);
+        this.setState({projectList:newList});
+      }
     }
 
     removeItem = (itemToRemove) => {
