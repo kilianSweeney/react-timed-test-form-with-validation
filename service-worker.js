@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-timed-test-form-with-validation/precache-manifest.7cb35bab4644d2d6f2e3a2c867fbd31a.js"
+  "/react-timed-test-form-with-validation/precache-manifest.3e84bed5b13b1e626e2398bb592f1b78.js"
 );
 
 self.addEventListener('message', (event) => {
